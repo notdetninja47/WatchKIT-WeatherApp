@@ -14,11 +14,14 @@
 		652414BA1D924FAD003CB29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652414B81D924FAD003CB29A /* LaunchScreen.storyboard */; };
 		652414BF1D924FAE003CB29A /* weatherAppForLab1 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 652414BE1D924FAE003CB29A /* weatherAppForLab1 WatchKit App.app */; };
 		652414C51D924FAE003CB29A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652414C31D924FAE003CB29A /* Interface.storyboard */; };
-		652414C71D924FAE003CB29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652414C61D924FAE003CB29A /* Assets.xcassets */; };
 		652414CE1D924FAE003CB29A /* weatherAppForLab1 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 652414CD1D924FAE003CB29A /* weatherAppForLab1 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		652414D31D924FAE003CB29A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652414D21D924FAE003CB29A /* InterfaceController.swift */; };
 		652414D51D924FAE003CB29A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652414D41D924FAE003CB29A /* ExtensionDelegate.swift */; };
 		652414D71D924FAE003CB29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652414D61D924FAE003CB29A /* Assets.xcassets */; };
+		652414E91D9259BD003CB29A /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652414E81D9259BD003CB29A /* WeatherInfo.swift */; };
+		652414EA1D9259BD003CB29A /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652414E81D9259BD003CB29A /* WeatherInfo.swift */; };
+		65326AD31D940ED3006AD67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65326AD21D940ED3006AD67C /* Assets.xcassets */; };
+		65F64B221D94D8A8007BE628 /* AdditionalPageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F64B211D94D8A8007BE628 /* AdditionalPageInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,13 +76,15 @@
 		652414BB1D924FAD003CB29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652414BE1D924FAE003CB29A /* weatherAppForLab1 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weatherAppForLab1 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		652414C41D924FAE003CB29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		652414C61D924FAE003CB29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652414C81D924FAE003CB29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652414CD1D924FAE003CB29A /* weatherAppForLab1 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "weatherAppForLab1 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		652414D21D924FAE003CB29A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		652414D41D924FAE003CB29A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		652414D61D924FAE003CB29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652414D81D924FAE003CB29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652414E81D9259BD003CB29A /* WeatherInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		65326AD21D940ED3006AD67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65F64B211D94D8A8007BE628 /* AdditionalPageInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalPageInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +108,7 @@
 		652414A31D924FAD003CB29A = {
 			isa = PBXGroup;
 			children = (
+				652414E81D9259BD003CB29A /* WeatherInfo.swift */,
 				652414AE1D924FAD003CB29A /* weatherAppForLab1 */,
 				652414C21D924FAE003CB29A /* weatherAppForLab1 WatchKit App */,
 				652414D11D924FAE003CB29A /* weatherAppForLab1 WatchKit Extension */,
@@ -136,8 +142,8 @@
 		652414C21D924FAE003CB29A /* weatherAppForLab1 WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				65326AD21D940ED3006AD67C /* Assets.xcassets */,
 				652414C31D924FAE003CB29A /* Interface.storyboard */,
-				652414C61D924FAE003CB29A /* Assets.xcassets */,
 				652414C81D924FAE003CB29A /* Info.plist */,
 			);
 			path = "weatherAppForLab1 WatchKit App";
@@ -147,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				652414D21D924FAE003CB29A /* InterfaceController.swift */,
+				65F64B211D94D8A8007BE628 /* AdditionalPageInterfaceController.swift */,
 				652414D41D924FAE003CB29A /* ExtensionDelegate.swift */,
 				652414D61D924FAE003CB29A /* Assets.xcassets */,
 				652414D81D924FAE003CB29A /* Info.plist */,
@@ -272,7 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652414C71D924FAE003CB29A /* Assets.xcassets in Resources */,
+				65326AD31D940ED3006AD67C /* Assets.xcassets in Resources */,
 				652414C51D924FAE003CB29A /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +301,7 @@
 			files = (
 				652414B21D924FAD003CB29A /* ViewController.swift in Sources */,
 				652414B01D924FAD003CB29A /* AppDelegate.swift in Sources */,
+				652414E91D9259BD003CB29A /* WeatherInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				652414D51D924FAE003CB29A /* ExtensionDelegate.swift in Sources */,
+				65F64B221D94D8A8007BE628 /* AdditionalPageInterfaceController.swift in Sources */,
 				652414D31D924FAE003CB29A /* InterfaceController.swift in Sources */,
+				652414EA1D9259BD003CB29A /* WeatherInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +567,7 @@
 				652414DD1D924FAE003CB29A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		652414DF1D924FAE003CB29A /* Build configuration list for PBXNativeTarget "weatherAppForLab1 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +576,7 @@
 				652414E11D924FAE003CB29A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		652414E31D924FAE003CB29A /* Build configuration list for PBXNativeTarget "weatherAppForLab1" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +585,7 @@
 				652414E51D924FAE003CB29A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

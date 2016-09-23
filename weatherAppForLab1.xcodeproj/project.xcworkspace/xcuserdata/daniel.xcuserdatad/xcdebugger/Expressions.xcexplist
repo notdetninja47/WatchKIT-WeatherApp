@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "InterfaceController.countHLTemps() -&gt; (highest : Int, lowest : Int):InterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "forecastInfo!.forecast[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InterfaceController.willActivate() -&gt; ():InterfaceController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WeatherInfoChunk.init(withDictionary : [String : AnyObject]) -&gt; WeatherInfoChunk:WeatherInfo.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "weatherDictionary[&quot;weather&quot;] as! [String: AnyObject]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DailyWeatherInfo.init(withListDictionaries : [[String : AnyObject]]) -&gt; DailyWeatherInfo:WeatherInfo.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "forecastValue.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

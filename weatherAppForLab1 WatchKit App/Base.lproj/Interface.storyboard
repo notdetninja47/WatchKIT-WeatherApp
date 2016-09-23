@@ -1,15 +1,150 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="weatherAppForLab1_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="134" height="20" alignment="left" id="GUC-ZK-8xR">
+                            <items>
+                                <label alignment="left" text="Kharkiv, UA" id="byY-mA-KlM">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                                <label width="45" alignment="left" text="now" textAlignment="right" id="CG0-fu-VYb">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="2YB-Gy-dZB"/>
+                        <group width="1" alignment="left" verticalAlignment="center" id="Bcm-fp-Kod">
+                            <items>
+                                <group width="1" alignment="left" id="bTE-aG-01z">
+                                    <items>
+                                        <group width="1" alignment="left" verticalAlignment="center" id="BJH-Al-Guf">
+                                            <items>
+                                                <imageView width="40" height="40" alignment="left" verticalAlignment="center" image="11d" id="cyV-CW-DFk"/>
+                                                <group width="1" alignment="left" layout="vertical" id="EDJ-j0-tZO">
+                                                    <items>
+                                                        <group width="1" alignment="left" layout="vertical" id="B4C-TS-1fc">
+                                                            <items>
+                                                                <label width="83" height="29" alignment="left" text="+35 ℃" id="PZl-2H-KND">
+                                                                    <fontDescription key="font" type="system" pointSize="23"/>
+                                                                </label>
+                                                                <group width="1" alignment="left" id="YOC-wz-rmC">
+                                                                    <items>
+                                                                        <label alignment="left" text="H: 36°" id="7Fi-T5-thO">
+                                                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                        </label>
+                                                                        <label alignment="left" text="L: 12°" id="26W-dU-o6C">
+                                                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                                        </label>
+                                                                    </items>
+                                                                </group>
+                                                            </items>
+                                                        </group>
+                                                    </items>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="136" height="48" alignment="left" verticalAlignment="bottom" text="thunderstorm with heavy drizzle" textAlignment="right" numberOfLines="3" id="h2q-vx-yKQ">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                    </items>
+                    <menu key="menu" id="sNO-Qe-6BZ">
+                        <items>
+                            <menuItem title="Switch Units" icon="info" id="Y7G-Of-xUu">
+                                <connections>
+                                    <action selector="switchUnits" destination="AgC-eL-Hgc" id="vEf-QT-Upv"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="currentTemperatureLabel" destination="PZl-2H-KND" id="M3C-6N-W2R"/>
+                        <outlet property="descriptionLabel" destination="h2q-vx-yKQ" id="yDZ-rg-u1B"/>
+                        <outlet property="highestTemperatureLabel" destination="7Fi-T5-thO" id="rZ0-Fo-QfR"/>
+                        <outlet property="lowestTemperatureLabel" destination="26W-dU-o6C" id="MYd-tf-Nzg"/>
+                        <outlet property="timeTravelLabel" destination="CG0-fu-VYb" id="PED-4I-nP3"/>
+                        <outlet property="weatherIcon" destination="cyV-CW-DFk" id="ydO-p1-YN1"/>
+                        <segue destination="SFI-Wg-yzH" kind="relationship" relationship="nextPage" id="6Zd-JW-qwb"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-110" y="38"/>
+        </scene>
+        <!--Additional Page Interface Controller-->
+        <scene sceneID="phX-rC-jeZ">
+            <objects>
+                <controller id="SFI-Wg-yzH" customClass="AdditionalPageInterfaceController" customModule="weatherAppForLab1_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="additional info" id="GDN-10-Zrt">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <separator alignment="left" id="eLL-0t-nTu"/>
+                        <group width="1" alignment="left" id="sS4-5U-XHZ">
+                            <items>
+                                <label alignment="left" text="pressure" id="XJ8-r3-tyl">
+                                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label width="70" alignment="left" text="1008 hPa" textAlignment="right" id="KS1-Rk-dbg" userLabel="pressureValue">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="kUJ-gn-dig">
+                            <items>
+                                <label alignment="left" text="humidity" id="DyA-sF-Ida">
+                                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label width="69" alignment="left" text="94 %" textAlignment="right" id="EJg-oa-FtU" userLabel="humidityValue">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Kem-e8-vxp">
+                            <items>
+                                <label alignment="left" text="clouds" id="cjT-qf-RLu">
+                                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label width="85" alignment="left" text="36 %" textAlignment="right" id="Rkm-gG-foD" userLabel="cloudsValue">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Ec8-zs-NiX">
+                            <items>
+                                <label alignment="left" text="wind" id="pp7-Pi-XSC">
+                                    <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label width="94" alignment="left" text="3.11 m/s" textAlignment="right" id="nbX-0U-vLs" userLabel="windValue">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cloudsLabel" destination="Rkm-gG-foD" id="Jvi-gh-nUx"/>
+                        <outlet property="humidityLabel" destination="EJg-oa-FtU" id="N44-Ev-t3u"/>
+                        <outlet property="pressureLabel" destination="KS1-Rk-dbg" id="kJm-hv-3lL"/>
+                        <outlet property="windLabel" destination="nbX-0U-vLs" id="SBz-VM-Hit"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="234" y="38"/>
         </scene>
     </scenes>
 </document>
